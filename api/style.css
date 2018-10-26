@@ -1,0 +1,8 @@
+body {
+  margin: 2em auto;
+  max-width: 600px;
+}
+form div {
+    display: block;
+    margin-bottom: 0.3em;
+}

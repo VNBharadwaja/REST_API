@@ -1,0 +1,20 @@
+CREATE DATABASE IF NOT EXISTS DanceBug;
+
+CREATE TABLE IF NOT EXISTS DanceBug.tblStudios(
+    StudioName VARCHAR(50),
+    StudioID int NOT NULL,
+    FirstName CHAR(25),
+    LastName CHAR(32),
+    Gender CHAR(6),
+    DOB DATE,
+    DancerID int NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    DateCreated DATETIME DEFAULT CURRENT_TIMESTAMP);
+
+    INSERT INTO DanceBug.tblStudios (StudioName, StudioID, FirstName, LastName, Gender, DOB)
+                values ('Stars Dance Academy', 5112, 'Alexis', 'Stephens','Female', '2012/03/10');
+
+    INSERT INTO DanceBug.tblStudios (StudioName, StudioID, FirstName, LastName, Gender, DOB)
+                values ('Stars Dance Academy', 5112, 'John', 'Snow','Male', '2011/7/11');
+
+    INSERT INTO DanceBug.tblStudios (StudioName, StudioID, FirstName, LastName, Gender, DOB)
+                values ('Edge Dance', 3215, 'Riley', 'O''Shaughnessy','Female', '2007/12/10');
